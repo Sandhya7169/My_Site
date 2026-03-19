@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandhya — About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Lora', Georgia, serif; background: #faf9f6; color: #2c2c2c; }
+        nav a { font-family: 'Inter', sans-serif; }
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #6b7280;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- nav -->
+    <nav class="border-b border-gray-200 bg-white/60 backdrop-blur-sm">
+        <div class="max-w-2xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-lg font-semibold tracking-tight text-gray-800" style="font-family:'Inter',sans-serif;">sandhya</a>
+            <div class="flex gap-6 text-sm text-gray-500">
+                <a href="index.html" class="nav-link hover:text-gray-800 transition-colors">Home</a>
+                <a href="about.html" class="nav-link hover:text-gray-800 transition-colors">About Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main class="flex-1 max-w-2xl mx-auto px-6 py-16">
+        <h1 class="text-3xl font-semibold text-gray-800 mb-8">About Me</h1>
+
+        <div class="space-y-5 text-gray-600 leading-relaxed text-[17px]">
+            <p>Hey, I'm <strong class="text-gray-800">Sandhya</strong>.</p>
+
+            <p>
+                I enjoy exploring technology, experimenting with small projects, and documenting
+                things I find interesting along the way.
+            </p>
+
+            <p>
+                Sometimes that means writing small bits of code, sometimes it means observing how
+                information moves across the internet.
+            </p>
+
+            <p>
+                Most of what I post here is just personal notes or thoughts I wanted to keep somewhere.
+            </p>
+
+            <p>Nothing fancy&nbsp;&mdash; just a small corner of the web.</p>
+        </div>
+
+        <!-- interests -->
+        <div class="mt-12 pt-8 border-t border-gray-200">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">A few things I like</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-500 text-[15px]">
+                <li>I like to go treks and enjoy nature💖💖</li>
+                <li>Tinkering with Raspberry Pi projects and home automation</li>
+                <li>Photography&nbsp;&mdash; mostly landscapes &amp; street</li>
+                <li>Reading about digital privacy and open-source tools</li>
+            </ul>
+        </div>
+
+</body>
+</html>
